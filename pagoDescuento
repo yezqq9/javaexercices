@@ -1,0 +1,30 @@
+//cada pieza de pan vale $5, si el cliente compra mas de 50, le costara $4.50
+//si compra mas de 100 piezas, le costara $4.
+//Programa que pida capturar la cantidad de piezas que se compraron y el total que se paga
+
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int cantPiezas = 0;
+        double totalPago = 0;
+        System.out.println("Ingrese la cantidad de piezas de pan que va a comprar: ");
+        cantPiezas = sc.nextInt(); //   <------ esto seria como el cin en c++
+
+        if (cantPiezas >= 50 && cantPiezas < 100) {
+            totalPago = cantPiezas * 4.5;
+        } else if (cantPiezas >= 100) {
+            totalPago = cantPiezas * 4;
+        } else {
+            totalPago = cantPiezas * 5;
+        }
+        System.out.println("El pago total es de $ "+totalPago);
+    }
+    }
+
+
+
