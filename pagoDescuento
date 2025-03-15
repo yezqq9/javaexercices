@@ -22,6 +22,7 @@ public class Main {
         } else {
             totalPago = cantPiezas * 5;
         }
+        System.out.println("El cliente compro "+cantPiezas+" de panes");
         System.out.println("El pago total es de $ "+totalPago);
     }
     }
